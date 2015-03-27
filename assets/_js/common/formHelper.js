@@ -122,6 +122,56 @@ OLCS.formHelper = (function(document, $, undefined) {
     .change();
   };
 
+  /**
+   * find a container or element based on a group (i.e. a fieldset)
+   * and selector. Takes a special asterisk(*) argument to represent
+   * the group itself rather than a child
+   */
+  exports.findContainer = function(form, group, selector) {
+    if (selector === "*") {
+      return exports.fieldset(group);
+    }
+
+    var parts;
+
+    if (selector.search(":") !== -1) {
+
+      parts = selector.split(":");
+
+      switch (parts[0]) {
+        case "label":
+          // @NOTE: we make some assumptions about the markup surrounding labels
+          // feel free to update as and when
+          return form.find("label[for=" + parts[1] + "]").parents(".field");
+        case "selector":
+          return form.find(parts[1]);
+        case "date":
+          return form.find("[name*=" + parts[1] + "]").parents(".field");
+        case "parent":
+          return form.find(parts[1]).parent();
+        default:
+          throw new Error("Unsupported left-hand selector: " + parts[0]);
+      }
+    }
+
+    if (selector.search("=") !== -1) {
+
+      // assume a name=value pair specifies a radio button with a given value
+      parts = selector.split("=");
+
+      // @TODO `group` isn't always right here; it can be an arbitrary selector
+      // not just a data-group=xxx name. This needs fixing at some point
+      return exports.findInput(group, parts[0])
+      .filter("[value=" + parts[1] + "]")
+      // radios are always wrapped inside a label
+      .parents("label:last");
+
+    }
+
+    // otherwise assume a straight input name which we assume is inside a field container
+    return exports.findInput(group, selector).parents(".field");
+  };
+
   return exports;
 
 }(document, window.jQuery));

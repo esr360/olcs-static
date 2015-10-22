@@ -1,5 +1,3 @@
-
-
 /*
   OLCS - Internal application SCSS
   ================================
@@ -9,12 +7,17 @@
 
 $app: internal;
 
-// Vendor
-@import '../vendor/govuk_toolkit/_device-pixels';
-@import '../vendor/govuk_toolkit/_measurements';
-@import '../vendor/govuk_toolkit/_css3';
-@import '../vendor/govuk_toolkit/_colours';
-@import '../vendor/govuk_toolkit/_typography';
+// GovUK Toolkit
+
+$govToolkit: '../vendor/govuk_toolkit/stylesheets';
+
+@import '#{$govToolkit}/device-pixels';
+@import '#{$govToolkit}/measurements';
+@import '#{$govToolkit}/conditionals';
+@import '#{$govToolkit}/colours';
+@import '#{$govToolkit}/grid_layout';
+
+// Chosen
 @import '../vendor/chosen';
 
 // Core

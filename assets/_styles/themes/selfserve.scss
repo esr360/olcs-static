@@ -1,23 +1,38 @@
-
-
-/*
-  OLCS - Selfserve SCSS
-  =====================
-  @version: 1.0
-  @author: sam.quayle@valtech.co.uk, Valtech Ltd
-*/
+//=================================================================
+// OLCS - Selfserve SCSS
+//
+// @version: 1.0
+// @author: sam.quayle@valtech.co.uk, Valtech Ltd
+//
+//=================================================================
 
 $app: selfserve;
 
+//-----------------------------------------------------------------
 // Vendor
-@import '../vendor/govuk_toolkit/_device-pixels';
-@import '../vendor/govuk_toolkit/_measurements';
-@import '../vendor/govuk_toolkit/_css3';
-@import '../vendor/govuk_toolkit/_colours';
-@import '../vendor/govuk_toolkit/_typography';
+//-----------------------------------------------------------------
+
+// GOVUK Toolkit
+// https://github.com/alphagov/govuk_frontend_toolkit
+
+$GOVToolkit: '../vendor/govuk_toolkit/stylesheets';
+
+@import '#{$GOVToolkit}/device-pixels';
+@import '#{$GOVToolkit}/measurements';
+@import '#{$GOVToolkit}/conditionals';
+@import '#{$GOVToolkit}/colours';
+@import '#{$GOVToolkit}/grid_layout';
+@import '#{$GOVToolkit}/typography';
+
+// Chosen
+// https://github.com/harvesthq/chosen
+
 @import '../vendor/chosen';
 
+//-----------------------------------------------------------------
 // Core
+//-----------------------------------------------------------------
+
 @import '../core/config';
 @import '../core/fonts';
 @import '../core/base';
@@ -29,7 +44,10 @@ $app: selfserve;
 @import '../core/tables';
 @import '../core/buttons';
 
+//-----------------------------------------------------------------
 // Components
+//-----------------------------------------------------------------
+
 @import '../components/version-header';
 @import '../components/global-header';
 @import '../components/search';
@@ -61,7 +79,10 @@ $app: selfserve;
 @import '../components/preloader';
 @import '../components/cookie-banner';
 
+//-----------------------------------------------------------------
 // Views
+//-----------------------------------------------------------------
+
 @import '../views/selfserve/overview';
 @import '../views/selfserve/search';
 @import '../views/selfserve/submit-application';

@@ -22,6 +22,7 @@ $GOVToolkit: '../vendor/govuk_toolkit/stylesheets';
 @import '#{$GOVToolkit}/conditionals';
 @import '#{$GOVToolkit}/colours';
 @import '#{$GOVToolkit}/grid_layout';
+@import '#{$GOVToolkit}/typography';
 
 // Chosen
 // https://github.com/harvesthq/chosen

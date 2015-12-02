@@ -24,9 +24,10 @@
   border-radius: 2px;
   display: none;
   position: absolute;
-  bottom: 20px;
+  top: -10px;
   left: -38px;
-  opacity: .9; /* IE :after bug prevents using opacity mixin */
+  transform: translateY(-100%);
+  opacity: .9;
   padding: .75em;
   font-size: .8em;
   line-height: 1.2;

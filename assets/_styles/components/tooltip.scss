@@ -49,4 +49,9 @@
     left: 35px;
     bottom: -9px;
   }
+  // override status styles when in context of tooltip
+  .status {
+    color: inherit;
+    border: none;
+  }
 }

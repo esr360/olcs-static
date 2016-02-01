@@ -76,8 +76,7 @@
      * Grunt Tasks
      * 
      * List of all separate Grunt tasks used by OLCS-Static,
-     * including a link to the public repo and minimum required
-     * version number.
+     * including a link to the public repo
      */
 
     grunt.initConfig({
@@ -513,7 +512,12 @@
     grunt.registerTask('lint', ['jshint:static']);
 
     // Browser Sync
-    grunt.registerTask('serve', ['notify', 'compile:dev', 'browserSync', 'watch']);
+    grunt.registerTask('serve', [
+      'notify', 
+      'compile:dev', 
+      'browserSync', 
+      'watch'
+    ]);
 
     // Karma
     grunt.registerTask('test', ['karma:test']);

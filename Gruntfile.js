@@ -115,7 +115,7 @@
         options: {
           processors: [
             require('autoprefixer')({
-              browsers: ['last 2 versions','IE 8','IE9','IE10']
+              browsers: ['last 2 versions', 'ie >= 8']
             })
           ]
         },

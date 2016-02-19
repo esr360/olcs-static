@@ -25,7 +25,7 @@ var OLCS = OLCS || {};
       dismissMessage      : 'Dismiss',
       alertMessage        : 'Time Left To Save',
       loggingOutMessage   : 'Logging Out...'
-    }
+    };
     
     var options = $.extend({}, defaults, custom || {});
     

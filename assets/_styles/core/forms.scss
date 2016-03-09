@@ -592,6 +592,7 @@ select:focus,
 
 .validation-wrapper {
   @extend %validation-box;
+  @extend %clearfix;
   border-left: 3px solid $mellow-red;
   fieldset {
     margin-bottom: 0;
@@ -680,15 +681,18 @@ select:focus,
   }
 }
 
+.checkbox {
+  &.inline label {
+    clear: none;
+  }
+}
+
 // Selfserve theme
 // ---------------
 
 @if $app == 'selfserve' {
 
   .checkbox {
-    &.inline label {
-      clear: none;
-    }
     label {
       background: $grey-3;
       padding: 14px 17px 14px 17px;
@@ -708,6 +712,9 @@ select:focus,
         &:focus {
           outline: 3px solid $outline;
         }
+      }
+      &.focused {
+        @extend .attach-action__label.focused;
       }
       &.disabled {
         cursor: default;
@@ -737,6 +744,10 @@ select:focus,
     p {
       margin-bottom: 15px;
     }
+  }
+  
+  .attach-action__label.focused {
+    outline: 3px solid $outline;
   }
 
 }

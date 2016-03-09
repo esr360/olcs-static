@@ -40,7 +40,8 @@
       var paths;
       return paths = [
         "assets/_js/common/vendor/jquery.1.11.0.js",
-        "assets/_js/common/vendor/select2.full.min.js",
+        //"assets/_js/common/vendor/select2.full.min.js",
+        "assets/_js/common/vendor/chosen.jquery.min.js",
         "assets/_js/common/vendor/jquery.details.min.js",
         "assets/_js/common/*.js",
         "assets/_js/" + path + "/*.js",
@@ -392,7 +393,7 @@
         },
         hbs: {
           files: ['styleguides/**/*.hbs'],
-          tasks: ['assemble']
+          tasks: ['clean:styleguide', 'assemble']
         },
         scripts: {
           files: ['assets/_js/**/*.js'],
@@ -548,6 +549,11 @@
 
     grunt.registerTask('authentication-prototype', function(directory) {
         globalConfig.prototypeName = 'authentication-prototype';
+        grunt.task.run(['clean:prototype', 'copy:prototype']);
+    });
+
+    grunt.registerTask('bus-reg-prototype', function(directory) {
+        globalConfig.prototypeName = 'bus-reg-prototype';
         grunt.task.run(['clean:prototype', 'copy:prototype']);
     });
 

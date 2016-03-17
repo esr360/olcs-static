@@ -69,8 +69,10 @@ tr.disabled {
   cursor: default;
   input[type="submit"] {
     cursor: default;
-    text-decoration: none;
     color: $grey-1;
+    &[value="Restore"] {
+      cursor: pointer;
+    }
   }
   a {
     text-decoration: underline;

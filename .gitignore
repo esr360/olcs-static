@@ -15,15 +15,8 @@ test/js/reports
 # Generated and compiled files
 #============================================================
 
-#public/images/
-public/js/
-public/styles/
-public/styleguides/
-public/unit-testing
-
+public/
 styleguides/screenshots
-
-#icon-sprite.scss
 
 # Third party/config
 #============================================================

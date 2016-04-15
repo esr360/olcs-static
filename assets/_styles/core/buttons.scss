@@ -4,7 +4,7 @@
 
 .actions-container {
   float: left;
-  margin: 1em 0;
+  margin-bottom: $gutter-half;
   a,
   input,
   button {
@@ -75,7 +75,7 @@ button {
   @extend %paragraph--small;
   border: 0;
   margin-right: 0.3em;
-  padding: 0.4em 0.75em 0.3em;
+  padding: 0.5em 0.75em 0.4em;
   text-decoration: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -249,7 +249,7 @@ a[class*="action--"][rel="external"] {
 @if $app == 'internal' {
 
   %action-box {
-    padding: 4px 10px 3px;
+    padding: 6px 10px 5px;
   }
 
   .actions-container select {
@@ -283,9 +283,6 @@ a[class*="action--"][rel="external"] {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
-    }
-    &.large {
-      padding: 5px 10px;
     }
   }
 

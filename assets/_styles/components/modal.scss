@@ -75,8 +75,8 @@
   }
 
   &__content {
-    overflow: auto;
     margin: $gutter 0;
+    @extend %clearfix;
   }
 
   &--alert {
@@ -107,9 +107,6 @@
     }
     &__close {
       @include svg('selfserve-modal-close');
-    }
-    .hint {
-      @extend %paragraph--small;
     }
   }
 

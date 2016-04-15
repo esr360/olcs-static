@@ -1,0 +1,257 @@
+---
+title: Request Details
+---
+
+<fieldset>
+  <legend>Request overview</legend>
+  <div class="table__wrapper" style="margin-bottom: 20px">
+    <table>
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Requester</th>
+          <th>Department</th>
+          <th>Date sent</th>
+          <th>Assigned to</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="status green">Open</div></td>
+          <td><b><a href="">Ohn Jinstone</a></b></td>
+          <td>IT</td>
+          <td>15 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <fieldset>
+    <legend>Start date <small>[<a href="#">Edit</a>]</small></legend>
+    <div class="field inline-text">
+      <label>Day</label>
+      <input type="text" maxlength="2" pattern="\d*" value="23" readonly disabled>
+    </div>
+    <div class="field inline-text">
+      <label>Month</label>
+      <input type="text" maxlength="2" pattern="\d*" value="9" readonly disabled>
+    </div>
+    <div class="field inline-text">
+      <label>Year</label>
+      <input type="text" maxlength="4" pattern="\d*" value="2015" readonly disabled>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>End date <small>[<a href="#">Edit</a>]</small></legend>
+    <div class="field inline-text">
+      <label>Day</label>
+      <input type="text" maxlength="2" pattern="\d*" value="23" readonly disabled>
+    </div>
+    <div class="field inline-text">
+      <label>Month</label>
+      <input type="text" maxlength="2" pattern="\d*" value="9" readonly disabled>
+    </div>
+    <div class="field inline-text">
+      <label>Year</label>
+      <input type="text" maxlength="4" pattern="\d*" value="2016" readonly disabled>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset>
+  <legend>Personal information</legend>
+  <div class="field">
+    <label for="first-name">Requester's name <small>[<a href="#">Edit</a>]</small></label>
+    <input id="first-name" name="name" class="long" value="Ohn Jinstone" readonly disabled>
+  </div>
+  <div class="field">
+    <label for="first-name">Requester's email <small>[<a href="#">Edit</a>]</small></label>
+    <input id="first-name" name="name" value="esr360@live.com" readonly disabled>
+  </div>
+  <div class="field">
+    <label for="first-name">Contact number <small>[<a href="#">Edit</a>]</small></label>
+    <input id="first-name" name="name" value="0161 702 95502" readonly disabled>
+  </div>
+  <div class="field">
+    <label for="title">Department <small>[<a href="#">Edit</a>]</small></label>
+    <select id="title" name="title" readonly disabled>
+      <option value="Please select">Accounts & finance</option>
+      <option value="Please select" selected>Human Resources</option>
+      <option value="Please select">IT</option>
+    </select>
+  </div>
+</fieldset><!-- personal information -->
+
+<fieldset>
+  <legend>Request details</legend>
+  <div class="field">
+    <label for="first-name">Description <small>[<a href="#">Edit</a>]</small></label>
+    <textarea id="additional-info" class="extra-long" placeholder="Enter change description" value="" readonly disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis, risus ac efficitur auctor, mauris ligula facilisis metus, nec pulvinar nibh dui sed lacus. Proin rutrum mi velit, sit amet dignissim arcu ultrices quis. Vestibulum faucibus nunc volutpat lorem hendrerit pulvinar in nec lorem</textarea>
+  </div>
+  <div class="file-uploader">
+    <ul class="js-upload-list" data-group="details[certificate][list]">
+      <li class="file">
+        <a href="#">avatar.jpg</a> <span>8.2KB</span><input type="submit" class="file__remove" value="Remove">
+      </li>
+      <li class="file">
+        <a href="#">adobe.pdf</a> <span>3.2MB</span><input type="submit" class="file__remove" value="Remove">
+      </li>
+    </ul>
+  </div>
+</fieldset><!-- request detail -->
+
+<fieldset style="margin-top: 40px">
+  <div class="table__header">
+    <h3>Request costs</h3>
+    <div class="actions-container">
+      <a href="" class="action--primary">Add cost</a>
+    </div>
+  </div><!-- .table__header -->
+  <div class="table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th class="sortable"><a href="#">Status</a></th>
+          <th class="sortable"><a href="#">Cost</a></th>
+          <th class="sortable"><a href="#">Description</a></th>
+          <th class="sortable"><a href="#">Cost Code</a></th>
+          <th class="sortable"><a href="#">Schema Account</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="status green">approved</div></td>
+          <td><b><a href="">£450</a></b></td>
+          <td>New laptop</td>
+          <td>ABC123</td>
+          <td>LOREM</td>
+        </tr>
+        <tr>
+          <td><div class="status green">approved</div></td>
+          <td><b><a href="">£5</a></b></td>
+          <td>Mars bar</td>
+          <td>ABC123</td>
+          <td>LOREM</td>
+        </tr>
+        <tr>
+          <td><div class="status red">rejected</div></td>
+          <td><b><a href="">£750</a></b></td>
+          <td>New pen</td>
+          <td>ABC123</td>
+          <td>LOREM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</fieldset>
+
+<fieldset>
+  <div class="table__header">
+    <h3>Request progress</h3>
+    <div class="actions-container">
+      <a href="" class="action--primary">Add progress</a>
+    </div>
+  </div><!-- .table__header -->
+  <div class="table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th class="sortable"><a href="#">Date</a></th>
+          <th class="sortable"><a href="#">% Complete</a></th>
+          <th class="sortable"><a href="#">Points (complete/total)</a></th>
+          <th class="sortable"><a href="#">Notes</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>14th April 2016</td>
+          <td><div class="status orange">60%</div></td>
+          <td>5/8</td>
+          <td>No notes</td>
+        </tr>
+        <tr>
+          <td>14th April 2016</td>
+          <td><div class="status red">20%</div></td>
+          <td>2/8</td>
+          <td>No notes</td>
+        </tr>
+        <tr>
+          <td>14th April 2016</td>
+          <td><div class="status green">85%</div></td>
+          <td>7/8</td>
+          <td>[<a href="#">View notes</a>]</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</fieldset>
+
+<fieldset>
+  <div class="table__header">
+    <h3>Request links</h3>
+    <div class="actions-container">
+      <a href="" class="action--primary">Add link</a>
+    </div>
+  </div><!-- .table__header -->
+  <div class="table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>URL</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#" rel="external">Gitlab</a></td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit id malesuada leo.</td>
+        </tr>
+        <tr>
+          <td><a href="#" rel="external">Jira</a></td>
+          <td>Vivamus sit amet arcu semper mauris bibendum sagittis.</td>
+        </tr>
+        <tr>
+          <td><a href="#" rel="external">Trello</a></td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit id malesuada leo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</fieldset>
+
+<fieldset>
+  <div class="table__header">
+    <h3>Request documents</h3>
+    <div class="actions-container">
+      <a href="" class="action--primary">Add document</a>
+    </div>
+  </div><!-- .table__header -->
+  <div class="table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>File name</th>
+          <th>File size</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#">avatar.jpg</a></td>
+          <td>273kb</td>
+          <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+          <td><a href="#">evidence.mp4</a></td>
+          <td>3.4mb</td>
+          <td>Evidence</td>
+        </tr>
+        <tr>
+          <td><a href="#">adobe.pdf</a></td>
+          <td>740kb</td>
+          <td>Evidence</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</fieldset>

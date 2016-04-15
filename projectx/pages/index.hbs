@@ -1,0 +1,68 @@
+---
+title: Change request
+---
+
+<fieldset>
+  <legend>Personal information</legend>
+  <div class="field">
+    <label for="first-name">Your name</label>
+    <input id="first-name" name="name" class="long">
+    <p class="hint">Please enter your first and last name</p>
+  </div>
+  <div class="field">
+    <label for="first-name">Your email</label>
+    <input id="first-name" name="name">
+    <p class="hint">The email address which you wish to be contacted on</p>
+  </div>
+  <div class="field">
+    <label for="first-name">Confirm email</label>
+    <input id="first-name" name="name">
+    <p class="hint">Confirm your email address</p>
+  </div>
+  <div class="field">
+    <label for="first-name">Contact number</label>
+    <input id="first-name" name="name">
+    <p class="hint">Enter a contact telephone number</p>
+  </div>
+  <div class="field">
+    <label for="title">Department</label>
+    <select id="title" name="title">
+      <option value="Please select">Accounts & finance</option>
+      <option value="Please select">Human Resources</option>
+      <option value="Please select">IT</option>
+    </select>
+    <p class="hint">Enter your department within the DVSA</p>
+  </div>
+</fieldset><!-- personal information -->
+
+<fieldset id="additional-information">
+  <legend>Request description</legend>
+  <p class="hint">Please provide a brief description of your change request being as specific as possible, attaching any relevant information.</p>
+  <div class="field">
+    <label for="additional-info" class="visually-hidden">Additional information</label>
+    <textarea id="additional-info" class="extra-long" placeholder="Enter change description"></textarea>
+  </div>
+  <div class="file-uploader">
+    <ul class="attach-action__list">
+      <li class="attach-action">
+        <label class="attach-action__label">
+          Attach file
+          <input class="attach-action__input js-visually-hidden" type="file" name="fileUpload[]">
+        </label>
+        <p class="attach-action__hint">20MB maximum file size. PDF, DOC, JPG, PNG or GIF</p>
+      </li>
+    </ul>
+    <ul class="js-upload-list" data-group="details[certificate][list]">
+      <li class="file">
+        <a href="#">avatar.jpg</a> <span>8.2KB</span><input type="submit" class="file__remove" value="Remove">
+      </li>
+      <li class="file">
+        <a href="#">adobe.pdf</a> <span>3.2MB</span><input type="submit" class="file__remove" value="Remove">
+      </li>
+    </ul>
+  </div>
+</fieldset><!-- additional information -->
+
+<div class="actions-container">
+  <input class="action--primary large" type="submit" value="Submit request">
+</div>

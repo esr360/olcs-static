@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-GB" class="no-js not-ie8">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Requests Queue</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/selfserve.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/js/selfserve.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      .file-uploader {
+        max-width: none;
+      }  
+      .status {
+        margin-left: 0;
+      }
+    </style>
+  </head>
+
+  <body class="projectx js-enabled ">
+
+    <div role="banner" class="global-header">
+      <div class="global-header__wrapper">
+        <a href="/styleguides/selfserve/" title="#" class="global-header__logo">
+          <img src="/images/bitmap/gov.uk_logotype_crown.png" alt="#">GOV.UK
+        </a>
+        <div class="proposition">
+          <h2 class="proposition__title">Vehicle Operator Licensing</h2>
+          <a class="proposition__toggle" href="#">Menu</a>
+          <ul class="proposition-nav">
+            <li class="proposition-nav__item"><a href="/styleguides/selfserve/licences.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- .global-header -->
+
+    <div class="page-wrapper">
+      <div class="user-header">
+        <div class="phase">
+          <span class="phase__tag">alpha</span>
+          <span class="phase__message">
+            This is a new service – <a href="https://www.surveymonkey.com/s/T8NGJV8">help us improve it.</a>
+          </span>
+        </div>
+        <ul class="user-menu">
+          <li class="user-menu__item">Katy Hasley, <b>Operator Licensing Ltd.</b></li>
+          <li class="user-menu__item"><a href="/styleguides/selfserve/authentication/index.html">Sign out</a></li>
+        </ul>
+      </div><!-- end .user-header -->
+
+      <div id="main" role="main" class="styleguide">
+        
+        <div class="page-header">
+          
+            
+              <div class="page-header__wrapper">
+                
+                <h1>Requests Queue</h1>
+                
+              </div><!-- .page-header__wrapper -->
+            
+        </div><!-- .page-header -->
+
+        <div class="row">
+          
+          <div class="two-thirds">
+            
+
+<form>
+  <div class="table__header">
+    <h3>Open Requests</h3>
+    <div class="actions-container">
+      <a href="" class="action--primary">Add request</a>
+      <div class="more-actions">
+        <p class="more-actions__button">More actions</p>
+        <div class="more-actions__list">
+          <input type="submit" class="more-actions__item" value="Remove">
+          <button class="more-actions__item">Action 1</button>
+          <button class="more-actions__item">Action 2</button>
+          <input type="submit" class="more-actions__item" value="Export">
+        </div>
+      </div>
+    </div>
+  </div><!-- .table__header -->
+  <div class="table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th class="sortable"><a href="#">Status</a></th>
+          <th class="sortable"><a href="#">Requester</a></th>
+          <th class="sortable"><a href="#">Department</a></th>
+          <th class="sortable"><a href="#">Date sent</a></th>
+          <th class="sortable"><a href="#">Assigned to</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="status green">status</div></td>
+          <td><b><a href="">Ohn Jinstone</a></b></td>
+          <td>IT</td>
+          <td>16 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+        <tr>
+          <td><div class="status orange">status</div></td>
+          <td><b><a href="">Quam Sale</a></b></td>
+          <td>Finance</td>
+          <td>16 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+        <tr>
+          <td><div class="status red">status</div></td>
+          <td><b><a href="">Redmund Eed</a></b></td>
+          <td>HR</td>
+          <td>12 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+
+<form>
+  <div class="table__header">
+    <h3>Closed Requests</h3>
+  </div>
+  <div class="table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th class="sortable"><a href="#">Status</a></th>
+          <th class="sortable"><a href="#">Requester</a></th>
+          <th class="sortable"><a href="#">Department</a></th>
+          <th class="sortable"><a href="#">Date sent</a></th>
+          <th class="sortable"><a href="#">Assigned to</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="status green">complete</div></td>
+          <td><b><a href="">Ohn Jinstone</a></b></td>
+          <td>IT</td>
+          <td>15 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+        <tr>
+          <td><div class="status green">complete</div></td>
+          <td><b><a href="">Quam Sale</a></b></td>
+          <td>Finance</td>
+          <td>14 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+        <tr>
+          <td><div class="status red">denied</div></td>
+          <td><b><a href="">Redmund Eed</a></b></td>
+          <td>HR</td>
+          <td>12 April 2016</td>
+          <td>Dimon Sawe</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+
+<script type="text/javascript">
+  OLCS.toggleElement({
+    triggerSelector: '.more-actions',
+    targetSelector: '.more-actions__list'
+  });
+</script>
+          </div>
+    
+          <div class="one-third">
+            <div class="sidebar">
+              <div class="support">
+  <h3>Support</h3>
+  <p>0113 254 3200<br />
+  <p><a href="operatorlicensing@otc.gov.uk">operatorlicensing@otc.gov.uk</a></p>
+</div>
+
+            </div>
+          </div>
+          
+        </div>
+
+      </div><!-- end .main -->
+    </div><!-- end .page-wrapper-->
+
+    <div class="global-footer">
+      <div class="global-footer__wrapper">
+        <ul class="global-footer__links">
+          <li class="global-footer__link"><a href="">Terms and conditions</a></li>
+          <li class="global-footer__link"><a href="privacy-policy.html">Privacy policy</a></li>
+          <li class="global-footer__link"><a href="">Feedback</a></li>
+          <li class="global-footer__link"><a href="">Cymraeg</a></li>
+          <li class="global-footer__link">Built by <a href="https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency" rel="external">Driver and Vehicle Standards Agency</a></li>
+        </ul>
+        <div class="global-footer__copyright">
+          <a href="">&copy; Crown copyright</a>
+        </div>
+      </div><!-- .global-footer-wrapper -->
+    </div><!-- .global-footer -->
+
+  </body>
+</html>

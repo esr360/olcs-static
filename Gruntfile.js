@@ -281,6 +281,17 @@
           dest: 'public/styleguides/selfserve',
           expand: true,
           src: '**/*.hbs'
+        },
+        projectx: {
+          options: {
+            layout: 'base.hbs',
+            layoutdir: 'projectx/layouts',
+            partials: 'projectx/partials/*.hbs'
+          },
+          cwd: 'projectx/pages',
+          dest: 'public/projectx',
+          expand: true,
+          src: '**/*.hbs'
         }
       },
 
@@ -402,7 +413,11 @@
         images: {
           files: ['assets/_images/**/*.{png,jpg,gif,svg}'],
           tasks: ['copy:images', 'svg2png', 'dr-svg-sprites']
-        }
+        },
+        projectx: {
+          files: ['projectx/**/*.hbs'],
+          tasks: ['clean:styleguide', 'assemble']
+        },
       },
 
       /**

@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{title}}</title>
+    <title>Sign in</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/styles/selfserve.css" media="all" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
     </style>
   </head>
 
-  <body class="projectx js-enabled {{bodyClass}}">
+  <body class="projectx js-enabled ">
 
     <div role="banner" class="global-header">
       <div class="global-header__wrapper">
@@ -57,36 +57,55 @@
       <div id="main" role="main" class="styleguide">
         
         <div class="page-header">
-          {{#if breadcrumbs}}
-          <ol class="breadcrumbs">
-            {{#each breadcrumbs }}
-              <li class="breadcrumbs__item"><a href="{{ link }}">{{ label }}</a></li>
-            {{/each}}
-          </ol>
-          {{/if}}
-            {{#if page-actions }}
-              <div class="row">
-                <div class="page-header__wrapper two-thirds">
-                  {{#if subtitle }}<h3 class="page-header__subtitle">{{ subtitle }}</h3>{{/if}}
-                  <h1>{{ title }}</h1>
-                  {{#if header-text }}<div class="page-header__text">{{{ header-text }}}</div>{{/if}}
-                </div><!-- .page-header__wrapper -->
-                <ul class="page-header__actions one-third">
-                  {{#each page-actions }}
-                  <li><a href="" class="page-header__action">{{ this }}</a></li>
-                  {{/each}}
-                </ul>
-              </div>
-            {{else}}
+          
+            
               <div class="page-header__wrapper">
-                {{#if subtitle }}<h3 class="page-header__subtitle">{{ subtitle }}</h3>{{/if}}
-                <h1>{{ title }}</h1>
-                {{#if header-text }}<div class="page-header__text">{{{ header-text }}}</div>{{/if}}
+                
+                <h1>Sign in</h1>
+                
               </div><!-- .page-header__wrapper -->
-            {{/if}}
+            
         </div><!-- .page-header -->
 
-        {{> body }}
+        
+
+<div class="row">
+
+  <div class="two-thirds">
+    <form action="">
+      <p>Sign in or <a href="create-account.html">create an account</a> to get started.</p>
+      <hr />
+       <fieldset>
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" class="long" id="username">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" class="long" id="password">
+        </div>
+        <div class="actions-container">
+          <a href="change-your-password.html" class="action--primary large js-sign-in">Sign in</a>
+          <a href="forgot-username.html" class="action--tertiary list">Forgotten your username?</a>
+          <a href="forgot-password.html" class="action--tertiary list">Forgotten your password?</a>
+        </div>
+      </fieldset>
+
+    </form>
+  </div><!-- .two-thirds -->
+
+  <div class="one-third">
+    <div class="sidebar">
+      <div class="support">
+  <h3>Support</h3>
+  <p>0113 254 3200<br />
+  <p><a href="operatorlicensing@otc.gov.uk">operatorlicensing@otc.gov.uk</a></p>
+</div>
+
+    </div>
+  </div>
+
+</div>
 
       </div><!-- end .main -->
     </div><!-- end .page-wrapper-->

@@ -1,72 +1,94 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en-GB" class="no-js not-ie8">
-<!--<![endif]-->
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Requests Queue</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/styles/selfserve.css" media="all" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="/js/selfserve.js"></script>
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style>
-      .status {
-        margin-left: 0;
-      }
-    </style>
+    <link href="/styles/internal.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/js/internal.js"></script>
+    <style>.status { margin-left: 0; }</style>
   </head>
 
-  <body class="projectx js-enabled ">
+  <body class="internal js-enabled ">
 
     <div role="banner" class="global-header">
       <div class="global-header__wrapper">
-        <a href="/styleguides/selfserve/" title="#" class="global-header__logo">
-          <img src="/images/bitmap/gov.uk_logotype_crown.png" alt="#">GOV.UK
-        </a>
-        <div class="proposition">
-          <h2 class="proposition__title">Vehicle Operator Licensing</h2>
-          <a class="proposition__toggle" href="#">Menu</a>
-          <ul class="proposition-nav">
-            <li class="proposition-nav__item"><a href="/styleguides/selfserve/licences.html">Home</a></li>
-          </ul>
-        </div>
-      </div>
+        
+          <h2 class="global-header__title"><a href="#">OLCS</a></h2>
+
+          <div class="search">
+            <div class="search__wrapper">
+              <div class="search__select">
+                <select>
+                  <option value="licence">Licences</option>
+                  <option value="applications">Applications</option>
+                  <option value="cases">Cases</option>
+                  <option value="cases">Bus regs</option>
+                  <option value="cases">Addresses</option>
+                  <option value="cases">Vehicles</option>
+                </select>
+              </div>
+              <input class="search__input" type="text" placeholder="Search">
+              <input class="search__button" type="submit">
+            </div>
+            <a href="#" class="search__advanced">Advanced</a>
+          </div><!-- .search -->
+
+          <ul class="admin">
+            <li class="admin__title">Admin
+              <div class="admin__menu">
+                <span class="admin__arrow"></span>
+                <ul class="admin__submenu">
+                  <li class="admin__item"><a href="#">Scanning</a></li>
+                  <li class="admin__item"><a href="#">Printing</a></li>
+                  <li class="admin__item"><a href="#">Publications</a></li>
+                  <li class="admin__item"><a href="#">Continuations</a></li>
+                  <li class="admin__item"><a href="#">Reports</a></li>
+                </ul>
+                <ul class="admin__submenu">
+                  <li class="admin__item"><a href="#">User management</a></li>
+                  <li class="admin__item"><a href="#">Financial standing rates</a></li>
+                  <li class="admin__item"><a href="#">Public holidays</a></li>
+                  <li class="admin__item"><a href="#">System messages</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul><!-- .admin -->
+          
+      </div><!-- >__wrapper -->
     </div><!-- .global-header -->
 
-    <div class="page-wrapper">
-      <div class="user-header">
-        <div class="phase">
-          <span class="phase__tag">alpha</span>
-          <span class="phase__message">
-            This is a new service – <a href="https://www.surveymonkey.com/s/T8NGJV8">help us improve it.</a>
-          </span>
-        </div>
-        <ul class="user-menu">
-          <li class="user-menu__item">Katy Hasley, <b>Operator Licensing Ltd.</b></li>
-          <li class="user-menu__item"><a href="/styleguides/selfserve/authentication/index.html">Sign out</a></li>
-        </ul>
-      </div><!-- end .user-header -->
+    <div class="page-header">
+      <div class="page-header__wrapper">
 
-      <div id="main" role="main" class="styleguide">
-        
-        <div class="page-header">
+          <div class="user-header">
+            
+              <ol class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="#">Home</a></li>
+                <li class="breadcrumbs__item current"></li>
+              </ol>
+            
+            <ul class="user-menu">
+              <li class="user-menu__item">Edmund Reed:</li>
+              <li class="user-menu__item"><a href="#">My account</a></li>
+              <li class="user-menu__item"><a href="#">Sign out</a></li>
+            </ul>
+          </div><!-- user-header -->
+
+          <h1>Requests Queue</h1>
           
-            
-              <div class="page-header__wrapper">
-                
-                <h1>Requests Queue</h1>
-                
-              </div><!-- .page-header__wrapper -->
-            
-        </div><!-- .page-header -->
+          
 
+      </div><!-- >__wrapper-->
+    </div><!-- .page-header-->
+
+    <div class="page-wrapper">
+      
+      
+      
+      <div id="main" role="main">
         
 
 <form>
@@ -171,24 +193,12 @@
     targetSelector: '.more-actions__list'
   });
 </script>
-
-      </div><!-- end .main -->
-    </div><!-- end .page-wrapper-->
-
-    <div class="global-footer">
-      <div class="global-footer__wrapper">
-        <ul class="global-footer__links">
-          <li class="global-footer__link"><a href="">Terms and conditions</a></li>
-          <li class="global-footer__link"><a href="privacy-policy.html">Privacy policy</a></li>
-          <li class="global-footer__link"><a href="">Feedback</a></li>
-          <li class="global-footer__link"><a href="">Cymraeg</a></li>
-          <li class="global-footer__link">Built by <a href="https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency" rel="external">Driver and Vehicle Standards Agency</a></li>
-        </ul>
-        <div class="global-footer__copyright">
-          <a href="">&copy; Crown copyright</a>
-        </div>
-      </div><!-- .global-footer-wrapper -->
-    </div><!-- .global-footer -->
+      </div><!-- #main -->
+      
+    </div><!-- .page-wrapper-->
 
   </body>
+  
 </html>
+
+

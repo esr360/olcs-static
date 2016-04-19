@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en-GB" class="no-js not-ie8">
-<!--<![endif]-->
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Change request</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/styles/selfserve.css" media="all" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/selfserve.js"></script>
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style>
-      .status {
-        margin-left: 0;
-      }
-    </style>
+    <style>.status { margin-left: 0; }</style>
   </head>
 
   <body class="projectx js-enabled ">
@@ -41,6 +29,7 @@
     </div><!-- .global-header -->
 
     <div class="page-wrapper">
+      
       <div class="user-header">
         <div class="phase">
           <span class="phase__tag">alpha</span>
@@ -52,19 +41,25 @@
           <li class="user-menu__item">Katy Hasley, <b>Operator Licensing Ltd.</b></li>
           <li class="user-menu__item"><a href="/styleguides/selfserve/authentication/index.html">Sign out</a></li>
         </ul>
-      </div><!-- end .user-header -->
+      </div><!-- .user-header -->
 
       <div id="main" role="main" class="styleguide">
         
         <div class="page-header">
           
-            
-              <div class="page-header__wrapper">
-                
-                <h1>Change request</h1>
-                
-              </div><!-- .page-header__wrapper -->
-            
+            <ol class="breadcrumbs">
+              
+                <li class="breadcrumbs__item"><a href="licences.html">Home</a></li>
+              
+            </ol>
+          
+          
+            <div class="page-header__wrapper">
+              
+              <h1>Change request</h1>
+              
+            </div>
+          
         </div><!-- .page-header -->
 
         
@@ -73,17 +68,17 @@
   <legend>Personal information</legend>
   <div class="field">
     <label for="name">Your name</label>
-    <input id="name" name="name" class="long">
+    <input id="name" name="name" class="medium">
     <p class="hint">Please enter your first and last name</p>
   </div>
   <div class="field">
     <label for="email">Your email</label>
-    <input id="email" name="name">
+    <input id="email" name="email" class="medium">
     <p class="hint">The email address which you wish to be contacted on</p>
   </div>
   <div class="field">
     <label for="confirm-email">Confirm email</label>
-    <input id="confirm-email" name="name">
+    <input id="confirm-email" name="confirm-email" class="medium">
     <p class="hint">Confirm your email address</p>
   </div>
   <div class="field">
@@ -134,8 +129,9 @@
   <input class="action--primary large" type="submit" value="Submit request">
 </div>
 
-      </div><!-- end .main -->
-    </div><!-- end .page-wrapper-->
+      </div><!-- .main -->
+      
+    </div><!-- .page-wrapper-->
 
     <div class="global-footer">
       <div class="global-footer__wrapper">
@@ -144,13 +140,16 @@
           <li class="global-footer__link"><a href="privacy-policy.html">Privacy policy</a></li>
           <li class="global-footer__link"><a href="">Feedback</a></li>
           <li class="global-footer__link"><a href="">Cymraeg</a></li>
-          <li class="global-footer__link">Built by <a href="https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency" rel="external">Driver and Vehicle Standards Agency</a></li>
+          <li class="global-footer__link">
+            Built by <a href="https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency" rel="external">Driver and Vehicle Standards Agency</a>
+          </li>
         </ul>
         <div class="global-footer__copyright">
           <a href="">&copy; Crown copyright</a>
         </div>
-      </div><!-- .global-footer-wrapper -->
+      </div>
     </div><!-- .global-footer -->
 
   </body>
+  
 </html>

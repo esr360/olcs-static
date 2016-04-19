@@ -1,9 +1,12 @@
 ---
+layout: admin.hbs
 title: Request Details
 ---
 
 <fieldset>
+  
   <legend>Request overview</legend>
+  
   <div class="table__wrapper" style="margin-bottom: 20px">
     <table>
       <thead>
@@ -26,6 +29,7 @@ title: Request Details
       </tbody>
     </table>
   </div>
+  
   <fieldset>
     <legend>Start date <small>[<a href="#">Edit</a>]</small></legend>
     <div class="field inline-text">
@@ -56,21 +60,22 @@ title: Request Details
       <input type="text" maxlength="4" pattern="\d*" value="2016" readonly disabled>
     </div>
   </fieldset>
+  
 </fieldset>
 
 <fieldset>
   <legend>Personal information</legend>
   <div class="field">
     <label for="name">Requester's name <small>[<a href="#">Edit</a>]</small></label>
-    <input id="name" name="name" class="long" value="Ohn Jinstone" readonly disabled>
+    <input id="name" name="name" class="medium" value="Ohn Jinstone" readonly disabled>
   </div>
   <div class="field">
     <label for="email">Requester's email <small>[<a href="#">Edit</a>]</small></label>
-    <input id="email" name="name" value="esr360@live.com" readonly disabled>
+    <input id="email" name="email" class="medium" value="esr360@live.com" readonly disabled>
   </div>
   <div class="field">
     <label for="number">Contact number <small>[<a href="#">Edit</a>]</small></label>
-    <input id="number" name="name" value="0161 702 95502" readonly disabled>
+    <input id="number" name="number" value="0161 702 95502" readonly disabled>
   </div>
   <div class="field">
     <label for="department">Department <small>[<a href="#">Edit</a>]</small></label>

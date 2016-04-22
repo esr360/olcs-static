@@ -1,0 +1,47 @@
+---
+title: Sign in
+header-text:
+---
+
+<div class="row">
+
+  <div class="two-thirds">
+    <div class="validation-summary">
+      <h3>There was a problem signing in</h3>
+      <p>Please check your username and password</p>
+    </div>
+    <form action="">
+      <p>Sign in or <a href="create-account.html">create an account</a> to get started.</p>
+      <hr />
+      <fieldset>
+        <div class="validation-wrapper">
+          <ul><li>Value is required</li></ul>
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" class="long" id="username">
+          </div>
+        </div>
+        <div class="validation-wrapper">
+          <ul><li>Value is required</li></ul>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" class="long" id="password">
+          </div>
+        </div>
+        <div class="actions-container">
+          <a href="change-your-password.html" class="action--primary large js-sign-in">Sign in</a>
+          <a href="forgot-username.html" class="action--tertiary list">Forgotten your username?</a>
+          <a href="forgot-password.html" class="action--tertiary list">Forgotten your password?</a>
+        </div>
+      </fieldset>
+
+    </form>
+  </div><!-- .two-thirds -->
+
+  <div class="one-third">
+    <div class="sidebar">
+      {{> _support}}
+    </div>
+  </div>
+
+</div>

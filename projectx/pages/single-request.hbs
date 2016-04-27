@@ -1,7 +1,17 @@
 ---
 layout: admin.hbs
 title: Request Details
+status: Suspended
+recordActions:
+  - title: Quick actions
+    actions:
+      - Change state
+      - Action 2
+      - Action 3
+      - Action 4
 ---
+
+<div class="table-col">
 
 <fieldset>
   
@@ -11,6 +21,7 @@ title: Request Details
     <table>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Status</th>
           <th>Requester</th>
           <th>Department</th>
@@ -20,6 +31,7 @@ title: Request Details
       </thead>
       <tbody>
         <tr>
+          <td width="30px">4</td>
           <td><div class="status green">Open</div></td>
           <td><b><a href="">Ohn Jinstone</a></b></td>
           <td>IT</td>
@@ -260,3 +272,33 @@ title: Request Details
     </table>
   </div>
 </fieldset>
+
+</div>
+
+<div class="sidebar--right">
+
+  <div class="small-module">
+    <h4 class="title">Request details</h4>
+    <p class="small-module__details">
+      <a href="">Don Tarmacadam Ltd</a><br />
+      Limited Company<br />
+      North East England</p>
+  </div>
+
+  <div class="record-actions">
+    {{#each recordActions }}
+    <h4 class="title">{{ this.title }}</h4> 
+    <ul class="record-actions__group">
+      {{#each this.actions }} 
+      <li class="record-actions__item"><a href="" class="action--secondary">{{ this }}</a></li>
+      {{/each }}
+    </ul>
+    {{/each }}
+  </div>
+
+  <div class="latest-note">
+    <p class="latest-note__details">Here there is space to display an important note...</p>
+    <a class="latest-note__link" href="#">View all 13 notes</a>
+  </div>
+  
+</div>

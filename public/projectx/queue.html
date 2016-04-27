@@ -16,7 +16,7 @@
     <div role="banner" class="global-header">
       <div class="global-header__wrapper">
         
-          <h2 class="global-header__title"><a href="#">OLCS</a></h2>
+          <h2 class="global-header__title"><a href="#">OLCS Demand</a></h2>
 
           <div class="search">
             <div class="search__wrapper">
@@ -91,101 +91,135 @@
       <div id="main" role="main">
         
 
-<form>
-  <div class="table__header">
-    <h3>Open Requests</h3>
-    <div class="actions-container">
-      <a href="" class="action--primary">Add request</a>
-      <div class="more-actions">
-        <p class="more-actions__button">More actions</p>
-        <div class="more-actions__list">
-          <input type="submit" class="more-actions__item" value="Remove">
-          <button class="more-actions__item">Action 1</button>
-          <button class="more-actions__item">Action 2</button>
-          <input type="submit" class="more-actions__item" value="Export">
+<div class="sidebar--left">
+  <h4 class="title">Filter by:</h4>
+  <form class="filters">
+    
+    <div class="field">
+      <label>Status</label>
+      
+      
+        <select name="">
+        
+          <option value="Open">Open</option>
+        
+          <option value="Closed">Closed</option>
+        
+        </select>
+      
+      
+    </div>
+    
+    <div class="field">
+      <label>Department</label>
+      
+      
+        <select name="">
+        
+          <option value="Finance">Finance</option>
+        
+          <option value="IT">IT</option>
+        
+        </select>
+      
+      
+    </div>
+    
+    <div class="field">
+      <label></label>
+      
+        
+        <div class="filter-group__item">
+          <label for="f-Show-closed-requests"><input type="checkbox" name="" id="f-Show-closed-requests">Show closed requests</label>
+        </div>
+        
+      
+      
+      
+    </div>
+    
+  </form>
+</div>
+  
+<div class="table-col">
+    
+  <form>
+    <div class="table__header">
+      <h3>Open Requests</h3>
+      <div class="actions-container">
+        <a href="" class="action--primary">Add request</a>
+        <div class="more-actions">
+          <p class="more-actions__button">More actions</p>
+          <div class="more-actions__list">
+            <input type="submit" class="more-actions__item" value="Remove">
+            <button class="more-actions__item">Action 1</button>
+            <button class="more-actions__item">Action 2</button>
+            <input type="submit" class="more-actions__item" value="Export">
+          </div>
         </div>
       </div>
+    </div><!-- .table__header -->
+    <div class="table__wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th class="sortable"><a href="#">Status</a></th>
+            <th class="sortable"><a href="#">Requester</a></th>
+            <th class="sortable"><a href="#">Department</a></th>
+            <th class="sortable"><a href="#">Date sent</a></th>
+            <th class="sortable"><a href="#">Assigned to</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="status green">status</div></td>
+            <td><b><a href="">Ohn Jinstone</a></b></td>
+            <td>IT</td>
+            <td>16 April 2016</td>
+            <td>Dimon Sawe</td>
+          </tr>
+          <tr>
+            <td><div class="status orange">status</div></td>
+            <td><b><a href="">Quam Sale</a></b></td>
+            <td>Finance</td>
+            <td>16 April 2016</td>
+            <td>Dimon Sawe</td>
+          </tr>
+          <tr>
+            <td><div class="status red">status</div></td>
+            <td><b><a href="">Redmund Eed</a></b></td>
+            <td>HR</td>
+            <td>12 April 2016</td>
+            <td>Dimon Sawe</td>
+          </tr>
+        <tbody>
+          <tr>
+            <td><div class="status green">status</div></td>
+            <td><b><a href="">Ohn Jinstone</a></b></td>
+            <td>IT</td>
+            <td>16 April 2016</td>
+            <td>Dimon Sawe</td>
+          </tr>
+          <tr>
+            <td><div class="status orange">status</div></td>
+            <td><b><a href="">Quam Sale</a></b></td>
+            <td>Finance</td>
+            <td>16 April 2016</td>
+            <td>Dimon Sawe</td>
+          </tr>
+          <tr>
+            <td><div class="status red">status</div></td>
+            <td><b><a href="">Redmund Eed</a></b></td>
+            <td>HR</td>
+            <td>12 April 2016</td>
+            <td>Dimon Sawe</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div><!-- .table__header -->
-  <div class="table__wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th class="sortable"><a href="#">Status</a></th>
-          <th class="sortable"><a href="#">Requester</a></th>
-          <th class="sortable"><a href="#">Department</a></th>
-          <th class="sortable"><a href="#">Date sent</a></th>
-          <th class="sortable"><a href="#">Assigned to</a></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div class="status green">status</div></td>
-          <td><b><a href="">Ohn Jinstone</a></b></td>
-          <td>IT</td>
-          <td>16 April 2016</td>
-          <td>Dimon Sawe</td>
-        </tr>
-        <tr>
-          <td><div class="status orange">status</div></td>
-          <td><b><a href="">Quam Sale</a></b></td>
-          <td>Finance</td>
-          <td>16 April 2016</td>
-          <td>Dimon Sawe</td>
-        </tr>
-        <tr>
-          <td><div class="status red">status</div></td>
-          <td><b><a href="">Redmund Eed</a></b></td>
-          <td>HR</td>
-          <td>12 April 2016</td>
-          <td>Dimon Sawe</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</form>
+  </form>
 
-<form>
-  <div class="table__header">
-    <h3>Closed Requests</h3>
-  </div>
-  <div class="table__wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th class="sortable"><a href="#">Status</a></th>
-          <th class="sortable"><a href="#">Requester</a></th>
-          <th class="sortable"><a href="#">Department</a></th>
-          <th class="sortable"><a href="#">Date sent</a></th>
-          <th class="sortable"><a href="#">Assigned to</a></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div class="status green">complete</div></td>
-          <td><b><a href="">Ohn Jinstone</a></b></td>
-          <td>IT</td>
-          <td>15 April 2016</td>
-          <td>Dimon Sawe</td>
-        </tr>
-        <tr>
-          <td><div class="status green">complete</div></td>
-          <td><b><a href="">Quam Sale</a></b></td>
-          <td>Finance</td>
-          <td>14 April 2016</td>
-          <td>Dimon Sawe</td>
-        </tr>
-        <tr>
-          <td><div class="status red">denied</div></td>
-          <td><b><a href="">Redmund Eed</a></b></td>
-          <td>HR</td>
-          <td>12 April 2016</td>
-          <td>Dimon Sawe</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</form>
+</div>
 
 <script type="text/javascript">
   OLCS.toggleElement({

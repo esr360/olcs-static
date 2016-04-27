@@ -1,4 +1,5 @@
 ---
+layout: admin.hbs
 title: Sign in
 header-text:
 ---
@@ -18,8 +19,10 @@ header-text:
           <label for="password">Password</label>
           <input type="password" class="long" id="password">
         </div>
+        <p>
+          <button type="submit" class="action--primary large js-sign-in">Sign in</button>
+        </p>
         <div class="actions-container">
-          <a href="change-your-password.html" class="action--primary large js-sign-in">Sign in</a>
           <a href="forgot-username.html" class="action--tertiary list">Forgotten your username?</a>
           <a href="forgot-password.html" class="action--tertiary list">Forgotten your password?</a>
         </div>
@@ -28,6 +31,7 @@ header-text:
     </form>
   </div><!-- .two-thirds -->
 
+  <!--
   <div class="one-third">
     <div class="sidebar">
       {{> _support}}

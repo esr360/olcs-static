@@ -5,10 +5,10 @@
 .confirmation {
   color: #FFF;
   background: $turquoise;
-  padding: 30px 30px 15px;
+  padding: $gutter-two-thirds $gutter $gutter-half;
   margin-bottom: 40px;
   h2 {
-  	margin-top: -.25em;
+    margin: 0 !important;
     display: inline-block;
   }
   p {

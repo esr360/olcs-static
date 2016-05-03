@@ -112,6 +112,11 @@
       @extend %paragraph--small;
     }
   }
+  .modal--alert {
+    .modal__content {
+      margin: $gutter-half 0;
+    }
+  }
 
 }// selfserve
 

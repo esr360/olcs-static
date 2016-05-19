@@ -2,6 +2,7 @@
     "extra": {
         "heroku": {
             "compile": [
+            	"chmod -R 777 styleguides",
                 "chmod -R 777 styles",
                 "chmod -R 777 images",
                 "chmod -R 777 js"

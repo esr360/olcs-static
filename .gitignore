@@ -16,10 +16,10 @@ test/js/reports
 #============================================================
 
 #public/images/
-public/js/
-public/styles/
-public/styleguides/
-public/unit-testing
+#public/js/
+#public/styles/
+#public/styleguides/
+#public/unit-testing
 
 styleguides/screenshots
 

@@ -3,7 +3,7 @@ title: Vehicle details
 user: operator
 layout: base.hbs
 breadcrumbs:
-  - link: licences.html
+  - link: index.html
     label: Back to overview
 ---
 
@@ -29,7 +29,7 @@ breadcrumbs:
 
   <div class="two-thirds">
     <form>
-      <fieldset class="inline-search" data-group="vehicleSearch">
+      <fieldset class="inline-search" data-group="vehicleSearch" style="margin-bottom: 40px;">
         <div class="field">
           <label for="vrm">Search for a vehicle</label>
           <input type="search" name="vehicleSearch[vrm]" id="vrm" placeholder="" class="inline-search__input" required="required" value="">
@@ -39,6 +39,7 @@ breadcrumbs:
         </div>
         <button type="submit" name="vehicleSearch[clearSearch]" class="inline-search__clear" id="clearSearch" value="">Clear search</button>
       </fieldset>
+      <hr />
     </form>
     <form>
       <div class="table__header">

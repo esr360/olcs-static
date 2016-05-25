@@ -71,8 +71,8 @@ $app: selfserve;
 @import '../components/system-messages';
 
 // Views
+@import '../views/search';
 @import '../views/selfserve/overview';
-@import '../views/selfserve/search';
 @import '../views/selfserve/submit-application';
 
 /*# sourceMappingURL=selfserve.css.map */

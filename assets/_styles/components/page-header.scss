@@ -3,11 +3,11 @@
  */
 
 .page-header {
- 
+
   /**
   * Selfserve only styles
   */
-  
+
   @if $app == 'selfserve' {
 
     position: relative;
@@ -94,5 +94,5 @@
       }
     }
   }// internal
-  
+
 }// .page-header

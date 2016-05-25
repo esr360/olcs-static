@@ -17,7 +17,7 @@
 .search-result {
   border-bottom: 1px solid $grey-3;
   padding-bottom: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .search-result__header {
@@ -39,4 +39,21 @@
 
 .search-result__meta p {
   margin-bottom: 0;
+}
+
+@if $app == 'internal' {
+  .search-result {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .search-result__header {
+    margin-bottom: 5px;
+  }
+  .search-result h4 {
+    font-size: font-size(4);
+  }
+  .search-result p {
+    font-size: font-size(3);
+
+  }
 }

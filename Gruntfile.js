@@ -579,7 +579,7 @@
     });
     
     /**
-     * Compile, commit/push ro github, and update github pages
+     * Compile, update github pages, commit/push to github
      */
     grunt.registerTask('github', [
       'compile:dev',

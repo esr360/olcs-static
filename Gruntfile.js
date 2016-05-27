@@ -576,7 +576,6 @@
         cmd : 'git',
         args: ['push', 'github', 'develop'],
       });
-      grunt.task.run('gh-pages');
     });
     
     /**
@@ -584,6 +583,7 @@
      */
     grunt.registerTask('github', [
       'compile:dev',
+      'gh-pages',
       'push-github'
     ]);
 

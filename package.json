@@ -36,4 +36,5 @@
     "grunt-localscreenshots": "^1.0.0",
     "grunt-scss-lint": "^0.3.8",
     "handlebars-helper-asset": "^0.1.0"
+  }
 }

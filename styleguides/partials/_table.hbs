@@ -1,4 +1,4 @@
-<form>  
+<form>
     {{#if title }}
       <div class="table__header">
         <h3>{{{title}}}</h3>
@@ -13,7 +13,7 @@
         <thead>
           <tr>
             {{#each headers }}
-              {{#contains this.class "not-sortable" }}      
+              {{#contains this.class "not-sortable" }}
               <th>{{{ this.label }}}</th>
               {{else }}
               <th class="{{ this.class }}"><a href="">{{{ this.label }}}</a></th>
@@ -22,10 +22,8 @@
           </tr>
         </thead>
         <tbody>
-          {{#repeat rows}}
           <tr>
             {{#each columns }}<td>{{{ this }}}</td>{{/each}}
-          {{/repeat}}
           </tr>
       </table>
     </div><!-- end .table__wrapper -->

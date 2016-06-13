@@ -67,11 +67,11 @@
 }
 
 .iframe-controls {
-  
+
   position: fixed;
   z-index: 12;
   background-color: $grey-4;
-  
+
   a {
     position: relative;
     display: inline-block;
@@ -142,7 +142,7 @@
   }
 
   .vertical &--orientation:after {
-    @include svg('internal-split-screen-pin-down');
+    @include svg('internal-split-screen-pin-bottom');
   }
 
   .vertical &--toggle:after {

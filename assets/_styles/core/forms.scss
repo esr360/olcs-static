@@ -357,11 +357,6 @@ select,
     border-left-color: $mellow-red;
     background-color: $warning-background;
   }
-  &__preloader {
-    @extend %preloader--light;
-    float: left;
-    margin-right: 10px;
-  }
   &__remove {
     position: absolute;
     right: 15px;

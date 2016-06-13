@@ -273,8 +273,7 @@
       assemble: {
         options: {
           helpers: [
-            'handlebars-helper-asset',
-            'handlebars-helper-repeat'
+            'handlebars-helper-asset'
           ],
           assets: 'public'
         },

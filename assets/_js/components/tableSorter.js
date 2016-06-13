@@ -21,11 +21,16 @@ OLCS.tableSorter = (function(document, $, undefined) {
     $(document).on("click", linkSelector, function clickHandler(e) {
       e.preventDefault();
 
+      var scrollTop = $(this).parent().hasClass('pagination__item') ? true: false;
+
       OLCS.ajax({
         url: $(this).attr("href"),
         success: OLCS.filterResponse(filter, container),
         complete: function() {
           OLCS.eventEmitter.emit("update:" + container);
+          if (scrollTop) {
+            $(window).scrollTop(0);
+          }
         }
       });
 

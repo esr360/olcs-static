@@ -13,6 +13,11 @@ OLCS.ready(function() {
     trigger: '.js-modal-ajax'
   });
 
+  OLCS.disableForm({
+    submit: '[type=submit], .js-modal-ajax',
+    loadText: 'loading'
+  });
+
   OLCS.characterCount({
     selector: 'textarea.js-financial-history'
   });

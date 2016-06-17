@@ -41,7 +41,9 @@ button {
     &:active,
     &:focus {
       outline: none;
-      box-shadow: 0 2px 0 darken($colour, 15%);
+      @if $app == 'selfserve' {
+        box-shadow: 0 2px 0 darken($colour, 15%);
+      }
     }
   }
   @if lightness($colour) < 50% {

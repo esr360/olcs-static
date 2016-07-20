@@ -1,3 +1,9 @@
+/**
+ * OLCS.accessibility
+ *
+ * grunt test:single --target=searchFilter
+ */
+
 describe('OLCS.searchFilter', function() {
   
   'use strict';
@@ -100,6 +106,23 @@ describe('OLCS.searchFilter', function() {
         
       });
     
+    });
+    
+    describe('When invoked with mobile option', function() {
+      
+      beforeEach(function() {
+        this.component({
+          parent: '#stub',
+          title: '#title',
+          content: '#content',
+          mobile: 940
+        });
+      });
+  
+      it('', function() {
+        
+      });
+        
     });
 
   });

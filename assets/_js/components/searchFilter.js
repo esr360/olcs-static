@@ -75,7 +75,7 @@ var OLCS = OLCS || {};
       return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
     }
 
-    if (options.mobile) {
+    if (typeof options.mobile == 'number') {
       var resizeTimer;
       $(window).on('resize', function() {
         clearTimeout(resizeTimer);
